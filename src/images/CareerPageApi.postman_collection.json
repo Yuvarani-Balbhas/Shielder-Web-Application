@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "830fb3a6-f8ed-4593-b09e-7af8477f1ba5",
+		"name": "CareerPageApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/insertOpportunity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\":\"HR \",\r\n    \"department\":\"resource manager\",\r\n    \"jobDescription\":\"7+ years java developer is needed. \",\r\n    \"positions\":10,\r\n    \"skills\":\"Communication skills,Advising,Recruitment and selection \",\r\n    \"location\":\"chennai\",\r\n    \"experience\":\"0 tyto 5 years\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/insertOpportunity",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"insertOpportunity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/verifyEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"resoucemanager@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/verifyEmail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"verifyEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/validateOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"resoucemanager@gmail.com\",\r\n    \"otp\":\"521348\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/validateOtp",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"validateOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/resendOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"resoucemanager@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/resendOtp",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"resendOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/preLogin/SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"resoucemanager@gmail.com\",\r\n    \"password\":\"res12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/preLogin/SignIn",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"preLogin",
+						"SignIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/getPostedOpportunities",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/getPostedOpportunities",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"getPostedOpportunities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/editJobOpportunities",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":20001,\r\n    \"role\":\"ui developer\",\r\n    \"department\":\"it\",\r\n    \"jobDescription\":\"7+ years java developer is needed. \",\r\n    \"positions\":8,\r\n    \"skills\":\"java, mysql\",\r\n    \"location\":\"chennai\",\r\n    \"experience\":\"7 tyto 8 years\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/editJobOpportunities",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"editJobOpportunities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/updateCloseStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":20001\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/updateCloseStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"updateCloseStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/resetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"resoucemanager@gmail.com\",\r\n    \"newPassword\":\"res12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/resetPassword",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/getCurrentJobOpenings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/getCurrentJobOpenings",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"getCurrentJobOpenings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/preLogin/submitJobRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/balbhasuser/Downloads/BBS-20210173.pdf"
+						},
+						{
+							"key": "token",
+							"value": "20001",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "swetha",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "t",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "swethaece2000@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "8489292907",
+							"type": "text"
+						},
+						{
+							"key": "experience",
+							"value": "2 years",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "chennai",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/balbhas/preLogin/submitJobRequest",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"preLogin",
+						"submitJobRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/balbhas/postLogin/viewParticularJobOpenings/20001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/balbhas/postLogin/viewParticularJobOpenings/20001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"balbhas",
+						"postLogin",
+						"viewParticularJobOpenings",
+						"20001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
